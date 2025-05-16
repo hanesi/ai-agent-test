@@ -1,0 +1,16 @@
+[
+  {
+    "user_id": "user_1",
+    "session_id": "abc123",
+    "actions": ["view_homepage", "click_product", "add_to_cart"],
+    "session_duration": 230,
+    "timestamp": "2025-05-10T12:34:56"
+  },
+  {
+    "user_id": "user_1",
+    "session_id": "def456",
+    "actions": ["view_help", "logout"],
+    "session_duration": 150,
+    "timestamp": "2025-05-11T10:22:11"
+  }
+]
