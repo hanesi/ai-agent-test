@@ -3,9 +3,8 @@
 # How It Works:
 
 - Loads mock session data for a user.
-- Analyzes their most common actions.
-- Checks SQLite DB for past user interactions/suggestions
-- Sends a behavior summary to GPT-4.
+- Creates a summary of their previous session
+- Sends a behavior summary to GPT-3.5.
 - Returns actionable suggestions.
 - Updates memory DB
 
@@ -21,27 +20,9 @@ Create a file named .env in the root directory and add:
 
 ## Start the FastAPI server:
 
-`uvicorn app:app --reload`
+`uvicorn app_memory:app --reload`
 
-## Test Request (using python)
+## Test in browser
 
-```
-import requests
-
-url = "http://localhost:8000/suggest/"
-
-payload = {
-    "user_id": "user_1"
-}
-
-response = requests.post(url, json=payload)
-print("Response JSON:", response.json())
-```
-
-Response should resemble something like this:
-```
-{
-  "suggestion": "You might want to check your cart or explore new features in the dashboard."
-}
-```
+Navigate to http://127.0.0.1:8000 and chat!
 
