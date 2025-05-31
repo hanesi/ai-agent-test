@@ -26,3 +26,8 @@ Create a file named .env in the root directory and add:
 
 Navigate to http://127.0.0.1:8000 and chat!
 
+# Video Demo
+
+
+https://github.com/user-attachments/assets/ea6201dd-a245-4712-bee7-5a92e16fded6
+
